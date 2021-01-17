@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'tt2020';
+  src: url('TT2020StyleB-Regular.eot'); /* IE9 Compat Modes */
+  src: url('TT2020StyleB-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('TT2020StyleB-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('TT2020StyleB-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('TT2020StyleB-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@media screen and (min-width: 601px) {
+  div.cmngSoon {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.cmngSoon {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  div.year {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.year {
+    font-size: 25px;
+  }
+}
+
+
+
+
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  box-shadow: inset 0 0 1em white, 0 0 1em white;
+  
+}
+
+.cmngSoon {
+z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+
+.year {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.year p {
+font-family: tt2020;
+  color:#ffffff;
+ margin-top: 170%;
+}
+
+.cmngSoon p {
+  font-family: tt2020;
+  color:#ffffff;
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+.stars, .twinkling {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  z-index: 0;
+  display:block;
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:0;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}

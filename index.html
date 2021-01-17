@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>𝕨𝕖𝕝𝕔𝕠𝕞𝕖</title>
+   <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+<div class="content">
+	<img src="test1.png" width="450">
+	<p><a href="do_jutra.html">episode 1</a></p>
+	<p><a href="index3.html">episode 2</a></p>
+	<p><a href="index4.html">episode 3</a></p>
+	<p><a href="index5.html">episode 4</a></p>
+	<p><a href="index6.html">episode 5</a></p>
+	<p><a href="index7.html">episode 6</a></p>
+	<p><a href="index8.html">episode 7</a></p>
+	<p><a href="index9.html">episode 8</a></p>
+	<p><a href="index10.html">episode 9</a></p>
+		<button type="button" class="collapsible">contact</button>
+		<div class="contact">
+  		<p>schizoauu@protonmail.com</p>
+
+		</div>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<div class="stars"></div>
+<div class="twinkling"></div>
+</body>
+</html>
